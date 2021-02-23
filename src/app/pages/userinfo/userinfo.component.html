@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="text-info p-5" *ngIf = "authservice.currentUser">
+           
+            <h4>Welcome {{authservice.currentUserName}}</h4>
+            <button class="btn-danger" (click)="authservice.singout()">Logout</button>
+
+            <button class="btn-primary" (click)="authservice.enterBoard()">Enter Board</button>
+            
+        </div>
+    </div>
+</div>
