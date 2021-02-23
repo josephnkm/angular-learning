@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
 
   validateForm(email, password) {
     if (email.lenght === 0) {
-      this.errorMessage = "please enter email id";
+      this.errorMessage = "please enter valid email id";
       return false;
     }
 
